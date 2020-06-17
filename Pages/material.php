@@ -72,7 +72,7 @@ else if($role==2){
 $stat=$connection->prepare("select * from coursematerial");
 $stat->execute();
 while($row=$stat->fetch()){
-    echo "<tr><td><a target='_blank' href='viewMaterial.php?id=".$row['ID']."'>".$row['Name']."</a></td>"."<td>".$row['Ccode']."</td></tr>";
+    echo "<tr><td><a target='_blank' href='../PHP/viewMaterial.php?id=".$row['ID']."'>".$row['Name']."</a></td>"."<td>".$row['Ccode']."</td></tr>";
 
 }
     ?>
