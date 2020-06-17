@@ -24,7 +24,7 @@ $CC=   $_SESSION['C'];
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HiLCoE Portal</title>
+        <title>Grades</title>
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/account.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -80,7 +80,7 @@ $CC=   $_SESSION['C'];
         <div style="overflow: hidden;" class="cont teachergrade">
         <img class="logo" src="../images/logo.png" alt="Logo">
         <form style=" margin-top: 5rem;" action="../PHP/insertGrade.php" method="post">
-        <select name="Course"> 
+        <select style="color:#0b3a94;" name="Course"> 
                     <?php
                     while($row=$resultObjjj->fetch_assoc()) : ?>
                     <option value="<?=$row['CCode']?>"><?=$row['Name']?> </option>

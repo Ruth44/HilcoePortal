@@ -17,4 +17,5 @@
           $stmt->execute();
           header("Location: ../Pages/assignment.php");
       }
+      else header("Location: ../Pages/assignment.php?status=unsuccessful");
        ?>

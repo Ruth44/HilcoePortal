@@ -154,7 +154,7 @@ height: 37rem;
 position: absolute;
 }
 .sidebar{
-    background-color: #0b3a94;
+    background-color: rgba(11, 58, 148, 1.0);
     height: 36.4rem;
     width: 15rem;
     float: right;
@@ -179,28 +179,9 @@ ul li{
     height: 36.4rem;
     float: left;
     width: 64rem;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 .cont h1{
     color: #e5bf3b;
 }
-/* input:invalid:required {
-    /* border: 2px dashed red; */
-  
 
-/* ul li:hover {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-size: 14px;
-    color: #f00;
-    height: 50px;
-    width: 134px;
-    text-decoration: none;
-    font-variant: small-caps;
-    background: #111;
-  }
-  
-  ul li:active {
-    background: blue;
-  } */

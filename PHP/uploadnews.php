@@ -9,5 +9,6 @@ if(isset($_POST['upload'])){
   $date=date("Y-m-d");
     $query="INSERT INTO `announcement`(`ID`, `adminUserId`, `News`, `date`) VALUES ('','$username','$news','$date')";
     $result=$connection->query($query);
-    header("Location: ../Pages/newsupload");
+    header("Location: ../Pages/newsupload?status=successful");
 }
+else header("Location: ../Pages/newsupload?status=unsuccessful");

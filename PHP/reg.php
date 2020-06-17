@@ -11,6 +11,11 @@ if(isset($_POST['submit'])){
     $username=$_POST['username'];
     $password=$_POST['password'];
     $gender=$_POST["gender"];
+    $queryy="SELECT ID FROM user where Username='$username'";
+    $resulttt=$connection->query($queryy);
+    if ($resulttt->num_rows > 0){
+      header("Location: ../Pages/register.php?status=unsuccessful"); }
+      else{
 
     $query1="INSERT INTO user(Username, Password, Role, Email) VALUES (?,?,?,?);";
     $stmt=mysqli_stmt_init($connection);
@@ -45,7 +50,7 @@ if($_SESSION['Role']==3){
   header("Location: ../Pages/accounts.php");
 }
 
-
+      }
 
 }else{
     header("Location: ../Pages/register.php?status=unsuccessful"); 

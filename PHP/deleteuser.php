@@ -21,7 +21,7 @@ if(isset($_POST['delete'])){
 
     }
     else{
-       
+        header("Location: ../Pages/admindelete.php?status=unsuccessful");
     }
 
 header("Location: ../Pages/admindelete.php");
@@ -45,9 +45,9 @@ if(isset($_POST['deletetea'])){
 
     }
     else{
-       
+        header("Location: ../Pages/admindelete.php?status=unsuccessful");
     }
 
-header("Location: ../Pages/admindelete.php");
+header("Location: ../Pages/admindelete.php?status=successful");
 }
 ?>

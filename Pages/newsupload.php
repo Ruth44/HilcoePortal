@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HiLCoE Portal</title>
+        <title>News</title>
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/account.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">

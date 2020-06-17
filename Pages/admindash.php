@@ -2,8 +2,8 @@
 require '../PHP/connection.php';
 $query="SELECT COUNT(ID) AS Users FROM user;";
 $query2="SELECT COUNT(ID) AS Users FROM user where Role='1';";
-$query3="SELECT COUNT(ID) AS Users FROM user where Role='1';";
-$query4="SELECT COUNT(DISTINCT(StuCode)) AS Users FROM grade where Grade='A' or Grade='A+' or Grade='B+';";
+$query3="SELECT COUNT(ID) AS Users FROM user where Role='2';";
+$query4="SELECT COUNT(DISTINCT(StuCode)) AS Users FROM grade where Grade IN ('A', 'A+', 'B+');";
 $result = $connection->query($query);
 $result2= $connection->query($query2);
 $result3= $connection->query($query3);
@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HiLCoE Portal</title>
+        <title>Admin Dashboard</title>
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/account.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -54,8 +54,9 @@ if ($result->num_rows > 0) {
            </div>
          <ul>
          <li id="report"><a href="#">REPORTS</a></li>
-         <li id="delete"><a href="newsupload.php">UPLOAD NEWS</a></li>
+         <li id="upload"><a href="newsupload.php">UPLOAD NEWS</a></li>
          <li id="delete"><a href="admindelete.php">DELETE USERS</a></li>
+
          </ul>
        </div> 
        <div style="overflow:hidden;width:64rem;" class="cont dash">
@@ -72,7 +73,7 @@ if ($result->num_rows > 0) {
 <h3>Teachers</h3>
 </div > 
 <div style="margin-left:37rem;margin-top:1rem;" class="counter">
-<h2 data-target="<?php echo $excellent?>">0</h2>
+<h2> <?php echo $excellent?> </h2>
 <h3 >Students with excellent scores</h3>
 </div>
        </div>

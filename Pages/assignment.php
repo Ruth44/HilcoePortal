@@ -16,11 +16,16 @@ else $type='Admin';
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HiLCoE Portal</title>
+        <title>Assignments</title>
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/account.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="icon" href="../images/website.ico">
+        <style>
+            ::placeholder{
+                color: #0b3a94;
+            }
+        </style>
     </head>
     <body>
      

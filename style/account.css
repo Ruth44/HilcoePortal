@@ -26,7 +26,7 @@
   font-weight: 700;
 }
 table {
-    width: 30rem;
+    width: 5rem;
     margin: auto auto;
    
   }
@@ -34,22 +34,21 @@ table {
     font-weight: 400;
     background: #0b3a94;
     color: #FFF;
-    width: 10rem;
+    width: 5rem;
     border-radius: 50px;
-    height: 3rem;
+    height: 1rem;
   }
   .homee table th{
-    width: 10rem;
+    width: 5rem;
     }
   
   tr {
     background: #f4f7f8;
     color: #0b3a94;
     font-weight: 600;
-    height: 5rem;
+    height: 1rem;
     margin-bottom: 5px;
     border-radius: 50px;
-    overflow-y: scroll;
   }
 
   .x{

@@ -18,11 +18,16 @@ else if($role==2){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HiLCoE Portal</title>
+        <title>Course Materials</title>
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/account.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="icon" href="../images/website.ico">
+        <style>
+            ::placeholder{
+                color: #0b3a94;
+            }
+        </style>
     </head>
     <body>
      
@@ -85,13 +90,13 @@ while($row=$stat->fetch()){
         <p>Upload course materials below. Please fill out all the fields.</p>
        
         <form action="../PHP/uploadMaterial.php" method="post" enctype="multipart/form-data">
-        <select name="Coursee"> 
+        <select style="color:#0b3a94;" name="Coursee"> 
                     <?php while($row=$resultObj->fetch_assoc()) : ?>
                     <option value="<?=$row['CCode']?>"><?=$row['Name']?> </option>
                        <?php endwhile; ?>
                        </select><br>
     <input type="file" name="myfile"><br>
-    <input type="text" name="fileName"><br>
+    <input type="text" name="fileName" placeholder="Enter a file name"><br>
     <button name="btnTeaCou">Upload</button>
 
 </form>

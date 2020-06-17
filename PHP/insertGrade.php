@@ -43,6 +43,6 @@ if(isset($_POST['Go'])){
         $result=$connection->query($query);
     }
 
-header("Location: ../Pages/grade.php");
+header("Location: ../Pages/grade.php?status=successful");
 }
 ?>
