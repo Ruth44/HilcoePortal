@@ -15,28 +15,43 @@
     transition: all 0.3s;
     vertical-align: middle;
 }
+.title{
+  text-align:center;
+  margin-top:0rem;
+  color:#e5bf3b;
+  font-weight:900;
+}
+.title2{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 table {
     width: 30rem;
     margin: auto auto;
-    border: #0b3a94 solid 0.1rem;
+   
   }
   thead th {
     font-weight: 400;
     background: #0b3a94;
     color: #FFF;
     width: 10rem;
+    border-radius: 50px;
+    height: 3rem;
   }
-  th{
-  width: 10rem;
-  }
+  .homee table th{
+    width: 10rem;
+    }
+  
   tr {
     background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
+    color: #0b3a94;
+    font-weight: 600;
+    height: 5rem;
     margin-bottom: 5px;
+    border-radius: 50px;
+    overflow-y: scroll;
   }
-  tr:nth-child(even) {
-    background: #e8eeef;
-  }
+
   .x{
       margin-top: 1rem;
       margin-left: auto;
@@ -72,4 +87,70 @@ margin-right: auto;
     height: 10rem;
     vertical-align: middle;
     text-align: center;
+}
+
+a:link {
+  color: #e5bf3b;
+  background-color: #0b3a94;
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: #e5bf3b;
+  background-color: #0b3a94;
+  text-decoration: none;
+}
+
+
+a:hover {
+  background-color: #e5bf3b;
+  color: #0b3a94;
+  text-decoration: none;
+}
+
+
+a:active {
+  color:#0b3a94;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+.logout{
+  height: 2rem;
+  width: 15rem;
+  margin: 0;
+  background-color:#e5bf3b;
+  color: #0b3a94;
+  font-weight: 600;
+  border: #0b3a94 solid 0.1rem;
+}
+.dash{
+background-image: linear-gradient(rgba(229,191,59,0.9),rgba(11,58,148,0.9)),url(../images/admin2.jpg);
+background-size: cover;
+background-position: center;
+}
+.counter{
+  border: #fff solid 0.15rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 70%;
+  display: inline-block;
+  position: absolute;
+  color: #FFF;
+  font-size: xx-large;
+  text-align: center;
+
+}
+.counter h3{
+  font-size: 1rem; 
+  margin-top: 6rem;
+}
+.counter h2{
+  margin-top: 4rem;
+}
+.regg{
+ background-image:url(../images/about.jpg);
+background-size: cover;
+opacity: 0.1;
+background-position: center;
 }

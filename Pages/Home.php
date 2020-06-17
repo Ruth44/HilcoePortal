@@ -5,6 +5,7 @@
         <title>HiLCoE Portal</title>
         <link rel="stylesheet" href="../style/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/website.ico">
     </head>
     <body>
         <div class="header">
@@ -21,7 +22,7 @@
            <img src="../images/about.jpg" alt="">
            <div class="howitworks">
                <h1>HOW IT WORKS</h1>
-               <p><?php echo "RUTH"; ?>  ​You are one login away from making your learning process much easier. 
+               <p>​You are one login away from making your learning process much easier. 
                   HiLCoE is always working hard to provide quality education to all its
                   students. In this app, every student can have access to different course
                   materials and assignments. They can also look at their grades and 

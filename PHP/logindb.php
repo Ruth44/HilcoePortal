@@ -24,7 +24,12 @@ if(!isset($_POST['login'])){
             $_SESSION['Email']=$email;
             $_SESSION['Role']=$role;
             $_SESSION['uname']=$name;
-          header("Location: ../Pages/accounts.php");
+            if($_SESSION['Role']==3){
+                header("Location: ../Pages/admindash.php");
+              } else{
+                header("Location: ../Pages/accounts.php");
+              }
+    
         }
     }
 }

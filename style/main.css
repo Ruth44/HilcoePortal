@@ -2,7 +2,7 @@ p,h1,h2,h3,h4,h5,h6,body{
     font-family: 'Roboto', sans-serif;
 }
 ::placeholder,select{
-    color: #0b3a94;
+    color: #fff;
     opacity: 0.7;
 }
 .header{
@@ -51,6 +51,9 @@ p,h1,h2,h3,h4,h5,h6,body{
     padding: 1rem 1rem 1rem 1rem;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 .home{
     width: 100%;
     height: 31rem;
@@ -65,13 +68,7 @@ p,h1,h2,h3,h4,h5,h6,body{
 .show{
     display: block;
 }
-.validate{
-    color: red;
-    display: inline-block;
-}
-.validation{
-    border-bottom: red 0.1rem solid;
-}
+
 .home h1{
     font-size: 60px;
     font-weight: 1200;
@@ -111,6 +108,7 @@ p,h1,h2,h3,h4,h5,h6,body{
 .howitworks button,.submit, .teachercourse button, .teacherass button, .x{
 margin-left: 13rem;
 padding: 1rem;
+padding-bottom: 2rem;
 background-color: #0b3a94 ;
 color: white;
 text-decoration: none;
@@ -126,9 +124,10 @@ form{
 }
 input{
     border: none;
-    border-bottom: #0b3a94 0.1rem solid;
+    border-bottom: #fff 0.1rem solid;
     height: 2.5rem;
     width: 20rem;
+    background-color: transparent;
 }
 
 .submit{
@@ -140,7 +139,7 @@ input[type=radio]{
     margin: 1.5rem 0.5rem;
 }
 label{
-    color: #0b3a94;
+    color: #fff;
 }
 .reg img{
 float: left;
@@ -164,7 +163,7 @@ ul{
     list-style: none;
     margin-right: 2rem;
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 2rem;
 }
 ul li{
     font-weight: 700;
@@ -179,12 +178,15 @@ ul li{
     /* border: #0b3a94 solid 1px; */
     height: 36.4rem;
     float: left;
-    width: 62rem;
+    width: 64rem;
     overflow-y: scroll;
 }
 .cont h1{
-    color: #0b3a94;
+    color: #e5bf3b;
 }
+/* input:invalid:required {
+    /* border: 2px dashed red; */
+  
 
 /* ul li:hover {
     padding: 0;

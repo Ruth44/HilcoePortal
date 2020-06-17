@@ -2,9 +2,8 @@
 session_start();
 require 'connection.php';
 $CouCode=$_POST["Courses"];
-echo $CouCode;
+$_SESSION['C']=$CouCode;
 $username=$_SESSION['uname'];
-echo $username;
 $query="SELECT
 `ID`
 FROM
@@ -35,10 +34,11 @@ if ($result3->num_rows > 0) {
     while($row = $result3->fetch_assoc()) {
       $grade=$row["Grade"];
       $_SESSION["Grade"]=$grade;
-      header("Location: ../Pages/accounts.php");
+      
+      header("Location: ../Pages/grade.php");
     }
   }
   else {
     $_SESSION["Grade"]="Not Posted yet";
-    header("Location: ../Pages/accounts.php");
+    header("Location: ../Pages/grade.php");
   }

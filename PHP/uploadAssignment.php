@@ -15,6 +15,6 @@
           $stmt->bindParam(3,$type);
           $stmt->bindParam(4,$data);
           $stmt->execute();
-          header("Location: ../Pages/accounts.php");
+          header("Location: ../Pages/assignment.php");
       }
        ?>

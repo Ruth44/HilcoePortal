@@ -17,7 +17,7 @@ if(isset($_POST['Go'])){
     else if($grdd>70){
         $grade="B";
     }
-    else if($grdd>60{
+    else if($grdd>60){
         $grade="C";
     }
     else if($grdd>50){
@@ -43,6 +43,6 @@ if(isset($_POST['Go'])){
         $result=$connection->query($query);
     }
 
-header("Location: ../Pages/accounts.php");
+header("Location: ../Pages/grade.php");
 }
 ?>

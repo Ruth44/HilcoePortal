@@ -1,13 +1,5 @@
 
 
-$(".login").on("click",function(){
-    $(".registerr").addClass("hide");
-    $(".loginn").removeClass("hide");
-});
-$(".register").on("click",function(){
-    $(".loginn").addClass("hide");
-    $(".registerr").removeClass("hide");
-})
 
 function signupvalidation() {
                 
@@ -21,38 +13,12 @@ function signupvalidation() {
     // courses=document.getElementById('Courses[]').value
     
     //var confirm_pasword = document.getElementById('confirm_pasword').value;
-    var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    var Code = /^[a-zA-Z]+@[0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
     var valid = true;
 
-    if (name == "") {
-        valid = false;
-        //document.getElementById('name_error').innerHTML = "required.";
-    }
-
-    if (email == "") {
-        valid = false;
-        document.getElementById('email_error').innerHTML = "required.";
-    } else {
-        if (!emailRegex.test(email)) {
-            valid = false;
-            document.getElementById('email_error').innerHTML = "invalid.";
-        }
-    }
-
-    if (password == "") {
-        valid = false;
-        document.getElementById('password_error').innerHTML = "required.";
-    }
-    // if (confirm_pasword == "") {
-    // 	valid = false;
-    // 	document.getElementById('confirm_password_error').innerHTML = "required.";
-    // }
-
-    // if (password != confirm_pasword) {
-    // 	valid = false;
-    // 	document.getElementById('confirm_password_error').innerHTML = "Both passwords must be same.";
-    // }
+    
+document.getElementsByName
 
     return valid;
 }

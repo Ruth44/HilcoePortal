@@ -20,16 +20,22 @@ else $type='Admin';
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/account.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/website.ico">
     </head>
     <body>
      
        <div class="sidebar">
            <h1 style="display:none;" class="TYPE"><?php echo $type?></h1>
+           <div class="logout">
+       <form action="../PHP/logout.php" method="post">
+           <input class="x logout" type="submit" name="logout" value="Logout">
+       </form>
+           </div>
          <ul>
-             <li id="home">HOME</li>
-             <li id="course">COURSE MATERIALS</li>
-             <li id="assignment">ASSIGNMENTS</li>
-             <li id="grade">GRADE REPORT</li>
+         <li id="home"><a href="accounts.php">HOME</a></li>
+             <li id="course"><a href="material.php">COURSE MATERIALS</a></li>
+             <li id="assignment"><a href="#">ASSIGNMENTS</a></li>
+             <li id="grade"><a href="grade.php">GRADE REPORT</a></li>
          </ul>
        </div> 
 
@@ -58,6 +64,7 @@ $stat=$connection->prepare("select * from assignment");
 $stat->execute();
     while($row=$stat->fetch()){
         echo "<tr><td><a target='_blank' href='../PHP/view.php?id=".$row['ID']."'>".$row['Name']."</a></td>"."<td>".$row['Ccode']."</td></tr>";
+        
     
     }
         ?>

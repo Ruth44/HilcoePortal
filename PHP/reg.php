@@ -1,4 +1,5 @@
 <?php
+
 include_once 'connection.php';
 session_start();
 
@@ -35,8 +36,16 @@ if(isset($_POST['submit'])){
     mysqli_stmt_prepare($stmt,$query2);
     mysqli_stmt_bind_param($stmt,"sssi",$id,$fullname,$gender,$last_id);
     mysqli_stmt_execute($stmt);
+      
 
-header("Location: ../Pages/accounts.php");
+    
+if($_SESSION['Role']==3){
+  header("Location: ../Pages/admindash.php");
+} else{
+  header("Location: ../Pages/accounts.php");
+}
+
+
 
 }else{
     header("Location: ../Pages/register.php?status=unsuccessful"); 

@@ -14,9 +14,11 @@ else if($role==2){
     $type='Teacher';
 }
 else $type='Admin';
-
+$grade=$CC='';
+if(isset($_POST['GRADE'])){
 $grade=$_SESSION["Grade"];
-
+$CC=   $_SESSION['C'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,16 +28,21 @@ $grade=$_SESSION["Grade"];
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/account.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/website.ico">
     </head>
     <body>
-     
        <div class="sidebar">
            <h1 style="display:none;" class="TYPE"><?php echo $type?></h1>
+           <div class="logout">
+       <form action="../PHP/logout.php" method="post">
+           <input class="x logout" type="submit" name="logout" value="Logout">
+       </form>
+           </div>
          <ul>
-             <li id="home">HOME</li>
-             <li id="course">COURSE MATERIALS</li>
-             <li id="assignment">ASSIGNMENTS</li>
-             <li id="grade">GRADE REPORT</li>
+         <li id="home"><a href="accounts.php">HOME</a></li>
+             <li id="course"><a href="material.php">COURSE MATERIALS</a></li>
+             <li id="assignment"><a href="assignment.php">ASSIGNMENTS</a></li>
+             <li id="grade"><a href="#">GRADE REPORT</a></li>
          </ul>
        </div> 
 
@@ -47,7 +54,9 @@ $grade=$_SESSION["Grade"];
 
        <div style="overflow: hidden;" class="cont studentgrade">
         <img class="logo" src="../images/logo.png" alt="Logo">
-        <form action="../PHP/getGrade.php" method="post">
+        <h1 class="title">Grade Report</h1>
+        <p>Check your result by choosing the course of your choice below.</p>
+        <form action="../PHP/getGrade.php" method="post" name="GRADE">
         <select name="Courses"> 
                     <?php 
                  
@@ -58,8 +67,9 @@ $grade=$_SESSION["Grade"];
                        <input class="x" type="submit" name="Go">
                        </form>
                        <div class="card">
-        <h1><?php echo $name?> </h1>
-        <h1>Your grade: <?php echo $grade?> </h1>
+        <p class="title2" style="margin_top:0rem;>" ><?php echo $name?> </p>
+        <p class="title2">Course Code: <?php echo $CC?></p>
+        <p class="title2">Your grade: <?php echo $grade?> </p>
         </div>
        </div>
        
