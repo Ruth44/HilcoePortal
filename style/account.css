@@ -1,0 +1,75 @@
+[type="file"]{
+    background: #ffffff;
+    border: 0.1rem solid #0b3a94;
+    border-radius: 5px;
+    color: #0b3a94;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    outline: none;
+    padding: 1rem 0rem 1rem 0rem;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+}
+table {
+    width: 30rem;
+    margin: auto auto;
+    border: #0b3a94 solid 0.1rem;
+  }
+  thead th {
+    font-weight: 400;
+    background: #0b3a94;
+    color: #FFF;
+    width: 10rem;
+  }
+  th{
+  width: 10rem;
+  }
+  tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+  }
+  tr:nth-child(even) {
+    background: #e8eeef;
+  }
+  .x{
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+  }
+select{
+height: 2rem;
+margin-left: auto;
+margin-right: auto;
+}
+[type="text"]{
+    border: 0.1rem solid #0b3a94;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.teachercourse button, .teacherass button{
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.teachercourse h1,p{
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    height: 10rem;
+    vertical-align: middle;
+    text-align: center;
+}
