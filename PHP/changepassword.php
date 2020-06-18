@@ -12,7 +12,13 @@ if(isset($_POST['confirm'])){
        while($row = $result->fetch_assoc()) {
         $query2="UPDATE user SET Password='$new' WHERE Username='$name'";
         $result=$connection->query($query2);
-           header("Location: ../Pages/accounts.php?status=successful");
+          
+       echo '<script type="text/javascript">
+
+        window.onload = function () { alert("Welcome at c-sharpcorner.com."); }
+        
+        </script>';
+header("Location: ../Pages/accounts.php?status=successful");
        }
    }else header("Location: ../Pages/accounts.php?status=unsuccessful");
 }

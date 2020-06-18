@@ -45,7 +45,7 @@ else $type='Admin';
         <img class="logo" src="../images/logo.png" alt="Logo">
         <h1 style="text-align:center;margin-top:0rem;color:#e5bf3b;font-weight:900;">Welcome <?php echo $name?></h1>
         <p>Catch up on some news right here.</p>
-      <table style="width: 60rem;">
+      <table class="homeee" style="width: 60rem;">
     <thead>
       <tr>
         <th style="width: 40rem;" scope="col">News</th>

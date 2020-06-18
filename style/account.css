@@ -26,15 +26,15 @@
   font-weight: 700;
 }
 table {
-    width: 5rem;
+    width: 9rem;
     margin: auto auto;
    
   }
   thead th {
     font-weight: 400;
     background: #0b3a94;
-    color: #FFF;
-    width: 5rem;
+    color: red;
+    width: 9rem;
     border-radius: 50px;
     height: 1rem;
   }
@@ -152,4 +152,11 @@ background-position: center;
 background-size: cover;
 opacity: 0.1;
 background-position: center;
+}
+.homeee{
+  border: 1px solid red;
+  width: 15rem;
+}
+.homeee th{
+  width: 10rem;
 }

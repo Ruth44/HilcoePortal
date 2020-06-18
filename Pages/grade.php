@@ -14,11 +14,8 @@ else if($role==2){
     $type='Teacher';
 }
 else $type='Admin';
-$grade=$CC='';
-if(isset($_POST['GRADE'])){
-$grade=$_SESSION["Grade"];
-$CC=   $_SESSION['C'];
-}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +42,7 @@ $CC=   $_SESSION['C'];
              <li id="grade"><a href="#">GRADE REPORT</a></li>
          </ul>
        </div> 
-
+  
       
 
 
@@ -68,8 +65,8 @@ $CC=   $_SESSION['C'];
                        </form>
                        <div class="card">
         <p class="title2" style="margin_top:0rem;>" ><?php echo $name?> </p>
-        <p class="title2">Course Code: <?php echo $CC?></p>
-        <p class="title2">Your grade: <?php echo $grade?> </p>
+        <p class="title2">Course Code: <?php if(isset($_SESSION['C'])) echo $_SESSION['C']; else echo "Select one";?></p>
+        <p class="title2">Your grade: <?php if(isset($_SESSION['Grade'])) echo $_SESSION['Grade']; else echo "Select one";?></p>
         </div>
        </div>
        

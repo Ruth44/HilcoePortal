@@ -157,7 +157,7 @@ position: absolute;
     background-color: rgba(11, 58, 148, 1.0);
     height: 36.4rem;
     width: 15rem;
-    float: right;
+    float: left;
 }
 ul{
     list-style: none;
@@ -177,7 +177,7 @@ ul li{
     position: absolute;
     /* border: #0b3a94 solid 1px; */
     height: 36.4rem;
-    float: left;
+    float: right;
     width: 64rem;
     overflow-y: hidden;
 }
